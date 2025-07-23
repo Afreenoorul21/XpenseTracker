@@ -27,6 +27,7 @@
 ---
 
 ## 📁 Folder Structure
+
 ExpenseTracker/
 ├── app/
 │ ├── java/com/example/expensetracker/
@@ -38,6 +39,8 @@ ExpenseTracker/
 │ │ ├── activity_add_transaction.xml
 ├── AndroidManifest.xml
 └── build.gradle
+
+
  **Clone the repository**
 
    git clone https://github.com/Afreenoorul21/Expense-Tracker.git

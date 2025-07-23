@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/backgroundColor"
+    tools:context=".DashboardActivity">
+
+
+    <LinearLayout
+        android:id="@+id/dashboardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/dashboardTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/titleColor" />
+
+        <ImageView
+            android:id="@+id/dropdownIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:contentDescription="Dropdown"
+            android:focusable="true"
+            android:src="@drawable/ic_arrow_down"
+            app:tint="@color/titleColor" />
+    </LinearLayout>
+
+    <!-- Income Input Container -->
+    <LinearLayout
+        android:id="@+id/incomeInputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dashboardHeader"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/monthlyIncomeInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Monthly Income"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/box_background"
+            android:textColorHint="#A9A9A9" />
+
+        <Button
+            android:id="@+id/saveIncomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/buttonColor"
+            android:textColor="@color/white"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- Balance Summary -->
+    <LinearLayout
+        android:id="@+id/balanceSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/incomeInputContainer"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/box_background"
+        android:elevation="4dp"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:id="@+id/totalBalanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Balance"
+        android:textSize="14sp"
+        android:textColor="@color/subtitleColor"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/totalBalanceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/titleColor"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
+
+    <!-- Income and Expense Summary -->
+<LinearLayout
+android:id="@+id/incomeExpenseSummary"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/balanceSummary"
+android:orientation="horizontal"
+android:weightSum="2"
+android:layout_marginBottom="20dp">
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@drawable/box_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/totalIncomeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Income"
+        android:textSize="14sp"
+        android:textColor="@color/subtitleColor" />
+
+    <TextView
+        android:id="@+id/totalIncomeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+$0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/incomeColor"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@drawable/box_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginStart="8dp">
+
+    <TextView
+        android:id="@+id/totalExpenseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Expense"
+        android:textSize="14sp"
+        android:textColor="@color/subtitleColor" />
+
+    <TextView
+        android:id="@+id/totalExpenseValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-$0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/expenseColor"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
+</LinearLayout>
+
+    <!-- Add Transaction Button -->
+<Button
+android:id="@+id/addTransactionButton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/incomeExpenseSummary"
+android:layout_centerHorizontal="true"
+android:text="Add Transaction"
+android:backgroundTint="@color/buttonColor"
+android:textColor="@color/white"
+android:textStyle="bold"
+android:layout_marginBottom="16dp"
+android:padding="10dp" />
+
+    <!-- Recent Transactions Label -->
+<TextView
+android:id="@+id/recentTransactionsLabel"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Recent Transactions"
+android:textSize="18sp"
+android:textStyle="bold"
+android:textColor="@color/titleColor"
+android:layout_below="@id/addTransactionButton"
+android:layout_marginBottom="12dp" />
+
+    <!-- Container for Transactions -->
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/transactionRecyclerView"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_below="@id/recentTransactionsLabel"
+android:layout_weight="1"
+android:paddingTop="8dp"
+android:paddingBottom="16dp"
+android:background="@drawable/box_background"
+android:clipToPadding="false"/>
+    </RelativeLayout>

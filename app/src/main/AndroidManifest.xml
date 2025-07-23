@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xpensetracker">
+
+    <!-- Permissions needed for the app (if any) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.XpenseTracker"> <!-- Update theme here -->
+
+        <!-- Main Activity (Launcher Activity) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Dashboard Activity -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true"
+            android:label="Dashboard" />
+
+        <!-- Transaction Activity -->
+        <activity
+            android:name=".TransactionActivity"
+            android:exported="true"
+            android:label="Transaction" />
+
+    </application>
+
+</manifest>

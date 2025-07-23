@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">XpenseTracker</string>
+    <string name="enter_additional_notes">Enter Additional Notes</string>
+    <string-array name="transaction_types">
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+
+
+</resources>

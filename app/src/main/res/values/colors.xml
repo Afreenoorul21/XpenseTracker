@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#F7F9FC</color> <!-- Soft light gray background -->
+    <color name="cardBackgroundColor">#FFFFFF</color> <!-- White for cards and list items -->
+    <color name="titleColor">#2C3E50</color> <!-- Dark slate blue for titles -->
+
+    <!-- Button Colors -->
+    <color name="buttonColor">#1E88E5</color> <!-- Bright blue for buttons -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- White text on buttons -->
+    <color name="primaryColor">#2196F3</color> <!-- Primary blue color -->
+
+    <!-- Input and Hint Colors -->
+    <color name="inputHintColor">#B0BEC5</color> <!-- Soft gray for hint text -->
+    <color name="hintColor">#78909C</color> <!-- Darker gray for hints -->
+    <color name="buttonPressedColor">#1565C0</color> <!-- Darker blue for pressed state -->
+
+    <!-- Financial Colors -->
+    <color name="incomeColor">#388E3C</color> <!-- Dark green for income -->
+    <color name="expenseColor">#D32F2F</color> <!-- Dark red for expenses -->
+    <color name="balanceColor">#1976D2</color> <!-- Medium blue for balance display -->
+    <color name="spentColor">#C62828</color> <!-- Darker red for spent money -->
+
+    <!-- Text Colors -->
+    <color name="subtitleColor">#7B8D8E</color> <!-- Gray for subtitles -->
+    <color name="amountColor">#FF7043</color> <!-- Coral for amounts -->
+    <color name="typeColor">#4B4B4B</color> <!-- Dark gray for transaction types -->
+    <color name="dateColor">#AAB8B8</color> <!-- Light gray for date -->
+    <color name="notesColor">#B0BEC5</color> <!-- Gray for notes -->
+
+    <!-- Miscellaneous Colors -->
+    <color name="linkColor">#1E88E5</color> <!-- Bright blue for links -->
+    <color name="errorColor">#E53935</color> <!-- Bright red for error messages -->
+    <color name="successColor">#43A047</color> <!-- Bright green for success messages -->
+
+    <!-- Item Background -->
+    <color name="itemBackgroundColor">#FFFFFF</color> <!-- Background color for items (white) -->
+</resources>
